@@ -1,11 +1,11 @@
+@testable import RMVSwiftUIViews
 import XCTest
-@testable import RMVViews
 
-final class RMVViewsTests: XCTestCase {
+final class RMVSwiftUIViewsTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(RMVViews().text, "Hello, World!")
+        // XCTAssertEqual(RMVSwiftUIViews().text, "Hello, World!")
     }
 }

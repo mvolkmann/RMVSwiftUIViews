@@ -18,7 +18,6 @@ public enum Icon: String {
         let suffix = fill ? ".fill" : ""
         if rawValue.prefix(3) == "sf-" {
             let systemName = String(rawValue.dropFirst(3)) + suffix
-            print("systemName =", systemName)
             return Image(systemName: systemName)
         }
         return Image(rawValue + suffix, bundle: .module)
