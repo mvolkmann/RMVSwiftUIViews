@@ -8,6 +8,7 @@ public enum Icon: String {
     case basketball
     case bell = "sf-bell"
     case bookmark = "sf-bookmark"
+    case custom // to use an image in the using project
     case flag = "sf-flag"
     case football
     case heart = "sf-heart"
@@ -20,6 +21,8 @@ public enum Icon: String {
             let systemName = String(rawValue.dropFirst(3)) + suffix
             return Image(systemName: systemName)
         }
-        return Image(rawValue + suffix, bundle: .module)
+        return rawValue == "custom" ?
+            Image(rawValue + suffix) : // gets from the app bundle
+            Image(rawValue + suffix, bundle: .module) // gets from this bundle
     }
 }
