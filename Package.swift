@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "RMVSwiftUIViews",
+    defaultLocalization: "en",
     platforms: [.iOS(.v13)],
     products: [
         // This package defines a single library that defines a single target.
