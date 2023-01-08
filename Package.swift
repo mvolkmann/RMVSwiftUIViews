@@ -17,6 +17,7 @@ let package = Package(
         .target(
             name: "RMVSwiftUIViews",
             dependencies: [],
+            exclude: ["notes.md"],
             resources: [
                 .process("Assets.xcassets"),
                 // .process flattens the folder structure
