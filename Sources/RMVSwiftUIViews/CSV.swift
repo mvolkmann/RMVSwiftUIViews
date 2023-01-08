@@ -1,10 +1,5 @@
 import Foundation
 
-extension String: LocalizedError {
-    // Allows String values to be thrown.
-    public var errorDescription: String? { self }
-}
-
 /// Parses a CSV string into an Array of Arrays of Strings.
 /// - Parameter csv: a String of CSV data containing newline characters and commas
 /// - Returns: an Array of Arrays of Strings
