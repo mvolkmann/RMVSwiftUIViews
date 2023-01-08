@@ -17,7 +17,13 @@ let package = Package(
         .target(
             name: "RMVSwiftUIViews",
             dependencies: [],
-            resources: [.process("Assets.xcassets"), .copy("demo.csv")]
+            resources: [
+                .process("Assets.xcassets"),
+                // .process flattens the folder structure
+                // so all files // in and below the Resources directory
+                // appear to be in its parent directory.
+                .process("Resources")
+            ]
         ),
         // This target contains unit tests for the target above.
         .testTarget(

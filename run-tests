@@ -1,0 +1,6 @@
+xcodebuild \
+  -scheme RMVSwiftUIViews \
+  -sdk iphonesimulator \
+  -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2' \
+  test
+
