@@ -20,7 +20,7 @@ let package = Package(
             resources: [
                 .process("Assets.xcassets"),
                 // .process flattens the folder structure
-                // so all files // in and below the Resources directory
+                // so all files in and below the Resources directory
                 // appear to be in its parent directory.
                 .process("Resources")
             ]
