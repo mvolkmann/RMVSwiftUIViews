@@ -19,7 +19,7 @@ public enum Icon: String {
         let suffix = fill ? ".fill" : ""
         if rawValue.prefix(3) == "sf-" {
             let systemName = String(rawValue.dropFirst(3)) + suffix
-            return Image(systemName: systemName)
+            return Image(systemName: systemName) // gets from SF Symbols
         }
         return rawValue == "custom" ?
             Image(rawValue + suffix) : // gets from the app bundle
